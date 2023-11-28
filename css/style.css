@@ -1,0 +1,96 @@
+/*selector universal*/
+*{
+    margin: 0%;
+    font-family: 'Lato', sans-serif;
+}
+/*importacion de tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+/*selector por etiqueta*/
+.spam {
+    color:blue;
+}
+/*selector por id*/
+#option_one, #option_three {
+    font-weight: 900;
+    background-color:bisque;
+    margin-left: 20px;
+}
+/*selector por clase*/
+.options_group{
+    background-color:#ffff00;
+}
+.options_group.other_option{
+    font-size: 30px;
+}
+/*selector por atributo*/
+[disabled]{
+    background-color: bisque;
+    
+}
+#title_box{
+    color: rgb(43, 226, 134);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 20px 50px 30px 50px;
+    background-color: bisque;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    box-shadow: 0px 0px 10px 2px #3d1919;
+    -webkit-box-shadow: 10px 11px 40px 15px rgba(38,35,38,0.67);
+    -moz-box-shadow: 10px 11px 40px 15px rgba(38,35,38,0.67);
+    box-shadow: 10px 11px 40px 15px rgba(38,35,38,0.67);
+}
+#box_father{
+    background-image: url(https://i.pinimg.com/1200x/0e/dd/16/0edd16205ef00bd7628bff31096e2b45.jpg);
+    width: 35%;
+    height: 400px;
+}
+
+#box_hijo{
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+}
+
+/* Aplicacion de media querls*/
+@media(min-width:800px) and (max-width:1200px) {
+    body {
+        background-color: black;
+    }
+    #title_box {
+        text-align:left;
+    }
+}
+@media (max-width: 799px) {
+    body {
+        background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=YVrRV3hG&id=5614E2D371DA7EF8332D3B03EE78A8ADB66FBFB1&thid=OIP.YVrRV3hGAwJoUNEON1lRWwHaEw&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.615ad157784603026850d10e3759515b%3frik%3dsb9vtq2oeO4DOw%26riu%3dhttp%253a%252f%252fupload.wikimedia.org%252fwikipedia%252fcommons%252f7%252f7f%252fLada_Niva_front_20080228.jpg%26ehk%3dhW5I3vOGnMFcyxYQyLjq7g4qDfD8QYkdRVutx5w5ghg%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1122&expw=1746&q=lada+niva+200px&simid=608028259992828879&FORM=IRPRST&ck=BA675E48A610618D88961E6EBB8BBC04&selectedIndex=1);
+    
+}
+li {
+    position: relative;
+    display: table-cell;
+    padding: 15px 0;
+}
+a{
+    color: #ffff;
+    text-decoration: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    text-decoration: none;
+}
+a:hover::after{
+    width: 100%;
+    left: 0;
+    background-color: #00fffc;
+}
+.menu{
+    background-color: black;
+    color:white;
+}

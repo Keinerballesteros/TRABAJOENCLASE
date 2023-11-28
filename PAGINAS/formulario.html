@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRARSE</title>
+</head>
+<body>
+        <header>
+            <h1>REGISTRARSE</h1>
+            <a href="/index.html">Volver atrás</a>
+        </header>
+    <h4>Ingrese sus datos, por favor:</h4>
+    <form name="Registro" method="post" accept-charset="utf-8">
+        <label>Nombre</label>
+        <input type="text"/> <br/>
+
+        <label>Apellidos</label>
+        <input type="text"/> <br/>
+
+        <label>Edad</label>
+        <input type="number"/> <br/>
+
+        <label>Correo electrónico</label>
+        <input type="email"/> <br/>
+
+        <label>Ingrese el año en el que nacio</label>
+        <input name="edad_usuario" type="date"> <br/>
+
+        <label>Género</label>
+        <select>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select> <br/>
+        <p>Envie una foto de documento de identidad</p>
+        <input type="file"> <br/>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
